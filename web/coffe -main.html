@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>妮特編織咖啡館</title>
+
+
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+<link href="../css/animate.css" rel="stylesheet" type="text/css" />
+<link href="../css/menuTab.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+function clearLinkDot() {
+	var i, a, main;
+	for(i=0; (a = document.getElementsByTagName("a")[i]); i++) {
+		if(a.getAttribute("onFocus")==null) {
+			a.setAttribute("onFocus","this.blur();");
+		}else{
+			a.setAttribute("onFocus",a.getAttribute("onFocus")+";this.blur();");
+		}
+		a.setAttribute("hideFocus","hidefocus");
+	}
+}
+
+function loadTab(obj,n){
+	var layer;
+	eval('layer=\'S'+n+'\'');
+
+	//將 Tab 標籤樣式設成 Blur 型態
+	var tabsF=document.getElementById('tabsF').getElementsByTagName('li');
+	for (var i=0;i<tabsF.length;i++){
+		tabsF[i].setAttribute('id',null);
+		eval('document.getElementById(\'S'+(i+1)+'\').style.display=\'none\'')
+	}
+
+	//變更分頁標題樣式
+	obj.parentNode.setAttribute('id','current');
+	document.getElementById(layer).style.display='inline';
+
+}
+function clearLinkDot() {
+   var i, a, main;
+   for(i=0; (a = document.getElementsByTagName("a")[i]); i++) {
+      if(     a.getAttribute("onFocus")==null) {
+         a.setAttribute("onFocus","this.blur();");
+      }else{
+         a.setAttribute("onFocus",a.getAttribute("onFocus")+";this.blur();");
+       }
+      a.setAttribute("hideFocus","hidefocus");
+   }
+}
+</script>
+</head>
+
+<body onload="clearLinkDot();MM_preloadImages('../image/coffe/爪哇曼特寧_down.png','../image/coffe/哥倫比亞_down.png','../image/coffe/宏都拉斯_down.png','../image/coffe/藍山_down.png','../image/coffe/瓜地馬拉_down.png','../image/coffe/引言_down.png','../image/coffe/巴西_down.png')">
+<div id ="wrapperb">
+<div id ="hbut"><a href="mealm.html"><img src="../image/1meal.png" name="am" width="130" height="70" class="bounce" id="am" onmouseover="MM_swapImage('am','','../image/11meal.png',1)" onmouseout="MM_swapImgRestore()" /></a><a href="coffe -main.html"><img src="../image/1coffee.png" name="ac" width="140" height="80" class="bounce1" id="ac" onmouseover="MM_swapImage('ac','','../image/11coffee.png',1)" onmouseout="MM_swapImgRestore()" /></a></a><a href="index.php"><img src="../image/logo3.png" name="logo3" width="86" height="123"  id="logo3" /></a><a href="knitm .html"><img src="../image/1knit.png" name="ak" width="143" height="62" class="bounce2" id="ak" onmouseover="MM_swapImage('ak','','../image/11knit.png',1)" onmouseout="MM_swapImgRestore()" /></a><a href="about main.html"><img src="../image/1aboutus.png" name="aab" width="201" height="59" class="bounce" id="aab" onmouseover="MM_swapImage('aab','','../image/11aboutus.png',1)" onmouseout="MM_swapImgRestore()" /></a></div>
+<div id ="mi">
+<div id ="tab">
+<div id="tabsF">
+	<ul>
+		<li id="current">
+        <a href="javascript://"style="display:none;" onclick="loadTab(this,1);"><span><img src="../image/coffe/引言_up.png" name="a1" width="70" height="70" id="a1" onmouseover="MM_swapImage('a1','','../image/coffe/引言_down.png',1)" onmouseout="MM_swapImgRestore()" /></span></a></li>
+		<li><a href="javascript://" onclick="loadTab(this,2);"><span><img src="../image/coffe/爪哇曼特寧_up.png" name="a2" width="80" height="70" id="a2" onmouseover="MM_swapImage('a2','','../image/coffe/爪哇曼特寧_down.png',1)" onmouseout="MM_swapImgRestore()" /></span></a></li>
+		<li><a href="javascript://" onclick="loadTab(this,3);"><span><img src="../image/coffe/哥倫比亞_up.png" name="a3" width="70" height="70" id="a3" onmouseover="MM_swapImage('a3','','../image/coffe/哥倫比亞_down.png',1)" onmouseout="MM_swapImgRestore()" /></span></a></li>
+		<li><a href="javascript://" onclick="loadTab(this,4);"><span><img src="../image/coffe/宏都拉斯_up.png" name="a4" width="70" height="70" id="a4" onmouseover="MM_swapImage('a4','','../image/coffe/宏都拉斯_down.png',1)" onmouseout="MM_swapImgRestore()" /></span></a></li>
+		<li><a href="javascript://" onclick="loadTab(this,5);"><span><img src="../image/coffe/藍山_up.png" name="a5" width="70" height="70" id="a5" onmouseover="MM_swapImage('a5','','../image/coffe/藍山_down.png',1)" onmouseout="MM_swapImgRestore()" /></span></a></li>
+        <li><a href="javascript://" onclick="loadTab(this,6);"><span><img src="../image/coffe/瓜地馬拉_up (1).png" name="a6" width="70" height="70" id="a6" onmouseover="MM_swapImage('a6','','../image/coffe/瓜地馬拉_down.png',1)" onmouseout="MM_swapImgRestore()" /></span></a></li>
+         <li><a href="javascript://" onclick="loadTab(this,7);"><span><img src="../image/coffe/巴西_up.png" name="a7" width="71" height="70" id="a7" onmouseover="MM_swapImage('a7','','../image/coffe/巴西_down.png',1)" onmouseout="MM_swapImgRestore()" /></span></a></li>
+	</ul>
+</div>
+<div id="tabsC">
+	<div id="S1" style="display:inline;"><img src="../image/coffe/引言.png" width="593" height="408" /></div>
+    
+	<div id="S2" style="display:none;"><img src="../image/coffe/爪哇曼特內容.png"  width="600" height="408" /><img src="../image/coffe/d1m.png" name="br" width="40" height="25" class="fadeIn" id="br" /><img src="../image/coffe/D2m.png" name="br2" width="42" height="26" class="fadeIn2"id="br2" /><img src="../image/coffe/爪哇曼特標題.png" name="br3" width="200" height="89"class="fadeIn3" id="br3" /></div>
+
+	<div id="S3" style="display:none;">
+    <img src="../image/coffe/哥倫比亞內容.png" width="600" height="408" /><img src="../image/coffe/d1c.png" name="br" width="30" height="20" class="fadeIn" id="br" /><img src="../image/coffe/D2c.png" name="br2" width="48" height="30" class="fadeIn2"id="br2" /><img src="../image/coffe/哥倫比亞標題.png" name="br3" width="200" height="89" class="fadeIn3" id="br3" /></div>
+    
+	<div id="S4" style="display:none;"><img src="../image/coffe/宏都拉斯內容.png"width="600" height="408" /><img src="../image/coffe/d1h.png" name="br" width="40" height="25" class="fadeIn" id="br" /><img src="../image/coffe/D2h.png" name="br2" width="48" height="30" class="fadeIn2"id="br2" /><img src="../image/coffe/宏都拉斯標題.png" name="br3" width="200" height="89" class="fadeIn3" id="br3" /></div>
+    
+	<div id="S5" style="display:none;"><img src="../image/coffe/藍山內容.png" width="600" height="408" /><img src="../image/coffe/d1l.png" name="br" width="40" height="25" class="fadeIn" id="br" /><img src="../image/coffe/D2l.png" name="br2" width="48" height="30" class="fadeIn2"id="br2" /><img src="../image/coffe/藍山標題.png" name="br3" width="200" height="89" class="fadeIn3" id="br3" /></div>
+    
+    <div id="S6" style="display:none;"><img src="../image/coffe/瓜地馬拉內容.png" width="600" height="408" /><img src="../image/coffe/d1k.png" name="br" width="30" height="19" class="fadeIn" id="br" /><img src="../image/coffe/D2k.png" name="br2" width="48" height="30" class="fadeIn2"id="br2" /><img src="../image/coffe/瓜地馬拉標題.png" name="br3" width="200" height="89" class="fadeIn3" id="br3" /></div>
+
+<div id="S7" style="display:none;"><img src="../image/coffe/巴西內容.png" width="600" height="408" /><img src="../image/coffe/d1b.png" name="br" width="30" height="20" class="fadeIn" id="br" /><img src="../image/coffe/D2b.png" name="br2" width="48" height="30" class="fadeIn2"id="br2" /><img src="../image/coffe/巴西標題.png" name="br3" width="190" height="89" class="fadeIn3"id="br3" /></div>
+    
+</div>
+</div>
+</div>
+
+
+
+
+</div>
+
+</body>
+</html>

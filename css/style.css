@@ -1,0 +1,292 @@
+@charset "utf-8";
+/* CSS Document */
+BODY {cursor:url(mouse.png)};
+#wrapper {
+	width: 100%;   /*寬度設定為900px*/
+	height: 100%;
+	margin: auto;   /*版面居中對齊*/
+	font-family: "微軟正黑體",Arial, Helvetica, sans-serif;
+	color: #333;
+	
+        }
+#wrappera{
+	width: 100%;
+	height: 900px;
+	background-image: url(../image/about/coffeeAB.png);
+	background-position: 50% 0%;
+	background-repeat: no-repeat;
+	background-color: #F7F7EF;
+	}
+#wrapperb{
+	width: 100%;
+	height: 900px;
+	background-image: url(../image/coffeeb.png);
+	background-position: 50% 0%;
+	background-repeat: no-repeat;
+	background-color: #F7F7EF;
+	text-align: center;
+	}
+#wrapperc{
+	width: 100%;
+	height: 900px;
+	
+	background-position: 50% 0%;
+	background-repeat: no-repeat;
+	background-color: #F7F7EF;
+	background-image: url(../image/knit/coffeekb.png);
+	}
+#wrapperd{
+	width: 100%;
+	height: 900px;
+	background-image: url(../image/meal/mealb.png);
+	background-position: 50% 0%;
+	background-repeat: no-repeat;
+	background-color: #F7F7EF;
+	}
+#header {
+         /*高度設定為130px，因有有設背景圖片，所以要設高度*/
+		text-align:center;
+		background-color:#444444;
+		filter:alpha(opacity=80);-moz-opacity:0.8;opacity:0.8; -khtml-opacity: 0.8;
+		
+        }
+#headera{
+	
+	
+	height: 100%;
+	background-repeat: no-repeat;
+	text-align: center;
+	
+	background-attachment:fixed;
+	
+	}
+#hbut{text-align: center;
+	
+	}
+#am{
+	 position:relative;
+	  top:50px; 
+      left:-180px; 
+	
+	}
+#logo3{ position:relative;
+	  top:80px; 
+     left:40px;
+	}
+#ac{
+	position:relative;
+	  top:60px;
+      left:-150px;
+	   
+	
+	}
+#ak{
+	position:relative;
+	  top:50px;
+      left:160px;
+	 
+	}
+#aab{
+	position:relative;
+	  top:50px; 
+      left:190px;
+	
+}
+#mid{text-align:center;
+}
+#header1 {
+	text-align:center;
+	height:300px;
+       /*高度設定為130px，因有有設背景圖片，所以要設高度*/
+		
+}
+#btn {
+        text-align:center; /*高度設定為  30px，此部分因為裡面的圖片自己會有高度，所以高度也不一定要設定*/
+		 margin-top:-200px;
+        }
+#word{
+	margin-top:-80px;
+	}
+#content {
+	height: 900px;
+	text-align: center;
+	background-size: 100% 100%;
+	background-repeat: repeat;	
+	 
+}
+#afooter{
+	background-color: #F7F7EF;
+	text-align: center;
+	position:relative;
+	top:0px;
+	}
+#fo{
+	
+}
+#footer {
+text-align: center;
+margin-top:0px
+
+         }
+#footer1 {
+margin-top:-90px
+
+         }
+#hr{
+	 padding-top:-125px;
+	
+}#wrapper #content p {
+	font-size: 36px;
+	letter-spacing: 10px;
+}
+.ball img {  
+-webkit-animation: spin 2.5s;  
+}  
+  
+@-webkit-keyframes spin {  
+   0% { -webkit-transform: rotate(-180deg); }  
+   100% { -webkit-transform: rotate(360deg); }  
+} 
+#logo{
+	 margin-top:-230px
+}
+#logo2{position:relative;
+	 top:-50px;
+        }
+#content1 {
+	text-align: center;
+	background-image: url(back_03.png);
+	background-repeat: no-repeat;
+	
+}
+#about{
+	position:relative;
+	 
+      left:270px; 
+	
+}
+#coff{
+	position:relative;
+	 
+      left:-280px;
+	
+}
+#logo2{
+	position:relative;
+	top:-90px;
+	left:-270px;
+	from, 10%, to {
+    opacity: 0;
+  }
+
+   50% {
+    opacity: 1;
+  }
+}
+	}
+#con{
+	position:relative;
+	 top:340px;
+      left:0px;
+}
+#inb{
+	width: 700px;
+	 text-align:center;
+	position:relative;
+	 top:130px;
+	 left:800px;
+	
+	 
+}
+#Image1,#Image2,#Image3,#Image4,#Image5,#Image6,#Image7{
+	padding-right:20px;
+	}
+#k1,#k2{
+	padding-right:60px;
+}
+#k3{padding-right:60px;}
+#m1,#m2{
+	padding-right:50px;}
+#m3{padding-right:50px;}	
+#m4,#m5,#m6{padding-right:50px;}
+#lo{
+	padding-right:20px;
+}
+#kn{
+	position:relative;
+	 
+      left:280px;
+}
+#meal{ 
+position:relative;
+	 
+      left:-280px; 
+}
+#abk{
+	padding-right:20px;
+}
+#coff1{
+	position:relative;
+	 top:320px;
+      left:0px;
+}
+#coff2{
+	position:relative;
+	 top:320px;
+      left:40px;}
+#ki{
+	position: relative;
+	top: 250px;
+	left: 0px;
+	  }
+#ki1{
+	position:relative;
+	 top:320px;
+      left:40px;}	
+#title{
+	position:relative;
+	 top:0px;
+}
+#line{
+	
+	width: 100%;
+	-webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 100s; /* Chrome, Safari, Opera */
+    animation-name: example;
+    animation-duration: 4s;
+	-webkit-animation-delay: 3s;
+	 /*延迟时间*/}
+        /* CSS 中 DIV 自己會長到上層 DIV100% 的寬度 (在這裡就是 #wrapper)，所以可不用設定寬度*/
+        }
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+    from { width:0%;}
+    to { width: 100%;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    from { width:0%;}
+    to { width: 100%;}
+
+}
+#gi{
+	position:relative;
+	 
+     top:-300px;
+}
+#br{position:relative;
+	 right:450px;
+     top:-420px;
+	}
+#br2{position:relative;
+	 right:450px;
+     top:-450px;
+	}
+#br3{position:relative;
+	 right:530px;
+     top:-480px;
+	}
+#paper{
+	}
+	

@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>妮特編織咖啡館</title>
+<style>
+p {
+  color: #fff;
+  font-family: "Microsoft YaHei",Avenir Next, Helvetica Neue, Helvetica, Tahoma, sans-serif;
+  font-size: 0.01em;
+  font-weight: 500;
+  letter-spacing: -30px;
+}
+p span {
+  display: inline-block;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-perspective: 500;
+          perspective: 500;
+  -webkit-font-smoothing: antialiased;
+}
+p span::before,
+p span::after {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: -1px;
+  -webkit-transform-origin: left top;
+      -ms-transform-origin: left top;
+          transform-origin: left top;
+  -webkit-transition: all ease-out 0.3s;
+          transition: all ease-out 0.3s;
+  content: attr(data-text);
+}
+p span::before {
+  z-index: 1;
+  color: rgba(0,0,0,0.2);
+  -webkit-transform: scale(1.1, 1) skew(0deg, 20deg);
+      -ms-transform: scale(1.1, 1) skew(0deg, 20deg);
+          transform: scale(1.1, 1) skew(0deg, 20deg);
+}
+p span::after {
+  z-index: 2;
+  color:#663300;
+  text-shadow: -1px 0 1px #663300, 1px 0 1px rgba(0,0,0,0.8);
+  -webkit-transform: rotateY(-40deg);
+          transform: rotateY(-40deg);
+}
+p span:hover::before {
+  -webkit-transform: scale(1.1, 1) skew(0deg, 5deg);
+      -ms-transform: scale(1.1, 1) skew(0deg, 5deg);
+          transform: scale(1.1, 1) skew(0deg, 5deg);
+}
+p span:hover::after {
+  -webkit-transform: rotateY(-10deg);
+          transform: rotateY(-10deg);
+}
+p span + span {
+  margin-left: 0.3em;
+}
+@media (min-width: 20em) {
+  p {
+    font-size: 2em;
+  }
+  p span::before,
+  p span::after {
+    display: block;
+  }
+}
+@media (min-width: 30em) {
+  p {
+    font-size: 3em;
+  }
+}
+@media (min-width: 40em) {
+  p {
+    font-size: 5em;
+  }
+}
+@media (min-width: 60em) {
+  p {
+    font-size: 8em;
+  }
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+ 
+  text-align:center;
+}
+#wrapper{text-align:center;
+width: 100%;   /*寬度設定為900px*/
+	height: 100%;
+	margin: auto;   /*版面居中對齊*/
+	position:relative;
+	top:50px;
+	}
+
+#EN{
+	position: relative;
+	top: -60px;
+	-webkit-border-radius: 50px;
+	-webkit-box-shadow: inset #663300 0 0 20px;
+}
+#EN:hover{-webkit-border-radius: 50px;
+-webkit-box-shadow: inset #663300 0 0 150px;
+ -webkit-transition: width32s; /* For Safari 3.1 to 6.0 */
+    transition: width 3s;}
+#C{position:relative;
+	top:-170px;
+	-webkit-border-radius: 60px;
+-webkit-box-shadow: inset #663300 0 0 20px;
+	}
+#C:hover{-webkit-border-radius: 50px;
+-webkit-box-shadow: inset #663300 0 0 150px;}
+#CO{position:relative;
+	top:-550px;}
+#bu{
+	
+	background: red;
+    -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s;}
+
+#PI{position:relative;
+	top:-280px;
+	-webkit-border-radius: 60px;
+-webkit-box-shadow: inset #663300 0 0 20px;}
+#PI:hover{-webkit-border-radius: 50px;
+-webkit-box-shadow: inset #663300 0 0 150px;}	
+</style>
+</head>
+
+<body>
+<div id="wrapper"> 
+<p aria-label="PeeledText">
+  <span data-text="妮">妮</span>
+  <span data-text="特">特</span>
+  <span data-text="編">編</span>
+  <span data-text="織">咖</span>
+  <span data-text="啡">啡</span>
+  <span data-text="館">館</span>
+  <span data-text="K">K</span>
+  <span data-text="N">N</span>
+  <span data-text="I">I</span>
+  <span data-text="T">T</span>
+</p>
+<div id="bu"></div>
+<p><a href="index.php"><img src="進入官網按鈕.png" name="EN" width="280" height="85" id="EN" /></a></p>
+<p> <a href="http://st101.wzu.edu.tw/~1101211013/index"><img src="手機板網頁.png" name="C" width="280" height="82" id="C" /></a></p>
+<p><a href="knit_1024.html"><img src="繪本.png" name="PI" width="280" height="80" id="PI" /></a></p>
+</div>           
+</body>
+</html>
